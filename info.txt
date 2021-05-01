@@ -1,0 +1,10 @@
+#*  |>npm init -y
+
+#*  |> npm i bcrypt cloudinary cookie-parser concurrently cors dotenv express express-fileupload jsonwebtoken mongoose
+
+#*  |>npm i -D nodemon
+
+#*  |>npx create-react-app client 
+
+#*  then inside the client dir 
+    |>npm i react-router-dom axios react-paypal-express-checkout

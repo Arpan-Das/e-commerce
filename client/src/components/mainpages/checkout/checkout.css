@@ -1,0 +1,226 @@
+.button {
+    background: teal !important;
+    border-radius:2px;
+    width:200px;
+    display:block;
+    height:30px;
+    border:1px solid;
+    margin-top:10px;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.checkout > h2{
+    text-align:center;
+    margin-top: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.grandTotal{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 10px;
+}
+.grandTotal p{
+    display:inline;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.grandTotal p span{
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+#conformBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+.MuiTypography-body1{
+    display:inline !important;
+}
+#paymentSuccess{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 900;
+    border-bottom: 5px solid #551a8b;
+}
+#goToHistory{
+    display: flex !important;
+    justify-content: center;
+}
+
+
+/*--------------------Delevery Address--------------*/
+.address{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:12px auto;
+    max-width: 1050px;
+}
+.newAddress{
+    margin: 10px auto;
+    min-width: 220px;
+    display:none;
+}
+.newAddress input{
+    margin: 5px;
+}
+.deliveryAddress{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 5px auto;
+}
+.deleveryAddress > p{
+    display: inline
+}
+#changeAddressButton{
+    font-size:0.9em;
+    margin: 0;
+    width: 120px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+/*------------- Address list -----------------*/
+.address_list{    
+    margin: 10px;
+    max-width: 220px;
+    width:100%;
+    overflow: hidden;
+    height: 220px;
+    padding: 9px 11px;
+    box-shadow: 0 0 15px #ddd;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+#select{
+    width:100px;
+}
+#edit{
+    width:100px;
+}
+.address_list span{
+    position: absolute;
+    top: -7px;
+    right: -6px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding:5px 10px;
+    cursor: pointer;
+    font-weight: 900;
+    color: crimson;
+}
+
+/*----------------------- Cart Items ----------------------------------*/
+#gridList{
+    background-color: rgb(245 245 245);
+}
+.tile{
+    margin: 8px auto;
+    padding: 16px;
+    min-width: 900px;
+    max-height: 150px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255 255 255);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #fff;
+}
+.tile .no{
+    margin: auto 5px;
+}
+.tile__image{
+    width: 128px;
+    height: 128px;
+    margin: auto 10px;
+}
+.tile__image img{
+    width: 100%;
+    height: 100%;
+}
+.tile__detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 200px;
+    margin-left: 10px;
+}
+.tile__detail h4{
+    margin: 0px;
+    text-align:start;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+.tile__detail #quantity p{
+    color: rgba(0, 0, 0, 0.54);
+}
+.tile__price{
+    width: 74px;
+    margin: 7px;
+}
+
+/*--------------------------PayNow -------------------*/
+.payNowBtn{
+    display:flex;
+    justify-content: flex-end;    
+}
+.payNow__option{
+    border-radius: 6px;
+    max-width: 400px;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 18px 20px;
+    background-color: rgb(245 245 245);
+}
+.payNow__option p{
+    text-transform: uppercase;
+}
+.cod{
+    background-color: rgb(255 255 255);
+    box-shadow: 4px 4px 4px -1px rgb(0 0 0);
+    border-radius: 6px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height: 45px;
+}
+.online{
+    background-color: rgb(255 255 255);
+    box-shadow: 4px 4px 4px -1px  rgb(0 0 0);
+    border-radius: 6px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height: 45px;
+}
+.payNow__option input{
+    margin: 5px 10px;
+    width: 9%;
+    height: 1.4em;
+    
+}
+.payNow__option label{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.0rem;
+    width:100%;
+    cursor: pointer;
+}

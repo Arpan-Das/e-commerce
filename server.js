@@ -22,9 +22,9 @@ app.use('/api', require('./routes/productRoutes'))
 app.use('/api', require('./routes/paymentRouter'))
 
 
-app.get('/', (req,res) =>{
-    res.json({msg: "Welcome to my backend, Thanks"})
-})
+// app.get('/', (req,res) =>{
+//     res.json({msg: "Welcome to my backend, Thanks"})
+// })
 
 
 

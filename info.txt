@@ -8,3 +8,25 @@
 
 #*  then inside the client dir 
     |>npm i react-router-dom axios react-paypal-express-checkout
+
+
+
+
+
+
+
+
+************************************************************************************
+**************************************************************************************
+************************************************************************************
+****************************************************************************************
+
+heroku deploy 
+
+if later on you want to change any thing then just do the changes 
+then just do the git commit and push to the heroku git 
+    $ git add .
+    $ git commit -am "make it better"
+    $ git push heroku master
+
+you can also find the more detail on heroku website

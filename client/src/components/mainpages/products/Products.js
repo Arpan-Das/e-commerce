@@ -57,6 +57,23 @@ function Products() {
         })
     }
     
+    const fetchProducts = () =>{
+        if(products){
+            return(
+                products.map(product =>{
+                    return <ProductItem key={product._id} product={product}
+                    isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} />
+                })
+            )
+        }else{
+            return <Loading />
+        }
+    }
+    const fetchLoadMore = () =>{
+        if(products){
+            return ( products.length === 0 && <Loading /> )
+        }
+    }
     if(loading) return <div><Loading /></div>
     return (
         <>
@@ -72,15 +89,12 @@ function Products() {
             
             <div className="products">
                 {
-                    products.map(product =>{
-                        return <ProductItem key={product._id} product={product}
-                        isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} />
-                    })
+                    fetchProducts()
                 }
             </div>
             
             <LoadMore />
-            {products.length === 0 && <Loading />}
+            { fetchLoadMore() }
         </>
     )
 }

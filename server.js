@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const fileUpload = require('express-fileupload')
 const cookieParser = require('cookie-parser')
-// const path = require('path')
+const path = require('path')
 
 const app =express()
 app.use(express.json())
@@ -22,9 +22,9 @@ app.use('/api', require('./routes/productRoutes'))
 app.use('/api', require('./routes/paymentRouter'))
 
 
-// app.get('/', (req,res) =>{
-//     res.json({msg: "Welcome to my backend, Thanks"})
-// })
+app.get('/', (req,res) =>{
+    res.json({msg: "Welcome to my backend, Thanks"})
+})
 
 
 
@@ -41,17 +41,20 @@ mongoose.connect(URI, {
 })
 
 
-// if(process.env.NODE_ENV === 'production'){
-//     app.use(express.static('client/build'))
-//     app.get('*', (req, res) =>{
-//         res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
-//     })
-// }
-
-
+if(process.env.NODE_ENV === 'production'){
+    app.use(express.static('client/build'))
+    app.get('*', (req, res) =>{
+        res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
+    })
+}
 
 
 const PORT = process.env.PORT || 5000
 app.listen(PORT, () =>{
     console.log('Server is running on port ',PORT)
+    console.log('path',path)
 })
+
+
+
+  

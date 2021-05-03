@@ -22,7 +22,7 @@ function Pages() {
 
     return (
         <Switch>
-            <Route exact path='/' >
+            {/* <Route exact path='/' >
                <div style={{
                   position: "relative",
                   top: "250px",
@@ -31,8 +31,11 @@ function Pages() {
                   <h1>Home Page</h1>
                   <h2>(Under Maintenance --Sorry For your Inconvenience)</h2>
                </div>
-            </Route>
-            <Route exact path='/store' >
+            </Route> */}
+            {/* <Route exact path='/store' >
+                <Products />
+            </Route> */}
+            <Route exact path='/' >
                 <Products />
             </Route>
             <Route exact path='/login' >

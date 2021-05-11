@@ -64,7 +64,7 @@ function Header() {
             </div>
 
             <ul style={styleMenu}>
-                <li onClick={() => setMenu(!menu)}><Link to='/'>{ isAdmin ? 'Products' : 'Store' }</Link></li>
+                <li onClick={() => setMenu(!menu)}><Link to='/store'>{ isAdmin ? 'Products' : 'Store' }</Link></li>
                 
                 { isAdmin && adminRouter() }
 

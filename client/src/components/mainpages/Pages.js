@@ -12,7 +12,7 @@ import OrderHistory from './history/OrderHistory';
 import DetailHistory from './history/DetailHistory';
 import Categories from './categories/Categories';
 import CreateProduct from './createProduct/CreateProduct';
-
+import Homepage from './homepage/homepage';
 
 
 function Pages() {
@@ -22,22 +22,12 @@ function Pages() {
 
     return (
         <Switch>
-            {/* <Route exact path='/' >
-               <div style={{
-                  position: "relative",
-                  top: "250px",
-                  left: "200px"
-               }}>
-                  <h1>Home Page</h1>
-                  <h2>(Under Maintenance --Sorry For your Inconvenience)</h2>
-               </div>
-            </Route> */}
-            {/* <Route exact path='/store' >
+            { <Route exact path='/' >
+               <Homepage/>
+            </Route> }
+            { <Route exact path='/store' >
                 <Products />
-            </Route> */}
-            <Route exact path='/' >
-                <Products />
-            </Route>
+            </Route> }
             <Route exact path='/login' >
                {isLogged ? <NotFound/> : <Login />} 
             </Route>

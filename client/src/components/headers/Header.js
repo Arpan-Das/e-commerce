@@ -25,7 +25,10 @@ function Header() {
     const adminRouter = () =>{
         return(
             <>
+                
                 <li onClick={() => setMenu(!menu)}><Link to="/create_product">Create Product</Link></li>
+                <li onClick={() => setMenu(!menu)}><Link to="/create_carosel">Create carosel</Link></li>
+                <li onClick={() => setMenu(!menu)}><Link to="/create_product">Create Poster</Link></li>
                 <li onClick={() => setMenu(!menu)}><Link to="/category">Categories</Link></li>
             </>
         )

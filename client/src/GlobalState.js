@@ -2,6 +2,7 @@ import React, { createContext, useState, useEffect} from 'react';
 import ProductsAPI from './API/ProductsAPI';
 import UserAPI from './API/UserAPI';
 import CategoriesAPI from './API/CategoriesAPI';
+import CaroselAPI from './API/CaroselAPI'
 import axios from 'axios';
 
 
@@ -32,7 +33,8 @@ export const DataProvider = ({children}) =>{
         token: [token, setToken],
         productsAPI: ProductsAPI(),
         userAPI: UserAPI(token),
-        categoriesAPI: CategoriesAPI()
+        categoriesAPI: CategoriesAPI(),
+        caroselAPI:CaroselAPI()
     }
 
     return(

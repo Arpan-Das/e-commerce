@@ -12,7 +12,8 @@ import OrderHistory from './history/OrderHistory';
 import DetailHistory from './history/DetailHistory';
 import Categories from './categories/Categories';
 import CreateProduct from './createProduct/CreateProduct';
-import Homepage from './homepage/homepage';
+import HomePage from './homepage/HomePage';
+import CreateCarosel from "./createcarosel/CreateCarosel"
 
 
 function Pages() {
@@ -22,12 +23,12 @@ function Pages() {
 
     return (
         <Switch>
-            { <Route exact path='/' >
-               <Homepage/>
-            </Route> }
-            { <Route exact path='/store' >
+            <Route exact path='/' >
+              <HomePage/>
+            </Route>
+            <Route exact path='/store' >
                 <Products />
-            </Route> }
+            </Route>            
             <Route exact path='/login' >
                {isLogged ? <NotFound/> : <Login />} 
             </Route>
@@ -54,6 +55,9 @@ function Pages() {
             </Route>
             <Route exact path='/create_product' >
                {isAdmin ? <CreateProduct /> : <NotFound/>} 
+            </Route>
+            <Route exact path='/create_carosel' >
+               {isAdmin ? <CreateCarosel /> : <NotFound/>} 
             </Route>
             <Route exact path='/edit_product/:id' >
                {isAdmin ? <CreateProduct /> : <NotFound/>} 

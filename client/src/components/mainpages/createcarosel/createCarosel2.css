@@ -1,0 +1,88 @@
+
+.ok{
+    margin: 12px 0px;
+}
+#dimensionInfo{
+    display:table;
+    margin: 3px auto;
+}
+.upload-carosel {
+    max-width: 1200px;
+    height: 300px;
+    width: 100%;
+    
+    border: 1px solid #ddd;
+    padding: 15px;
+    padding-right:30px;
+    margin: 20px;
+    position: relative;
+    margin: 0px auto;
+}
+button[type = submit]{
+    width: 39%;
+    text-align: center;
+    text-transform: uppercase;
+    color: antiquewhite;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 6px;
+    background: teal;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: block;
+    margin: 12px auto;
+}
+
+/* images */
+.show{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imageContainer{
+    max-width: 500px;
+    overflow: hidden;
+    height: 200px;
+    padding: 15px;
+    box-shadow: 0 0 15px #ddd;
+    margin: 20px 31px;
+    position: relative;
+    padding-right: 33px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.imageContainer img{
+    width: 500px;
+
+}
+.image{
+    opacity: 1;
+    display: block;
+    padding: 10px;
+   
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  .image:hover{
+    cursor: pointer;
+    opacity: 0.3;
+   
+  }
+  .but{
+    width: 39%;
+    text-align: center;
+    text-transform: uppercase;
+    color: antiquewhite;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 6px;
+    background: teal;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: block;
+    margin: 12px auto;
+  }

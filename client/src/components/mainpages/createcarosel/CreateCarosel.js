@@ -64,13 +64,7 @@ export default function CreateCarosel() {
     const styleUpload = {
         display: images ? "block" : "none"
     }
-    const btnStyle = {
-        color: "green",
-        backgroundcolor: "#4CAF50", /* Green */
-        padding: "10px"
-
-
-    }
+    
     const handleSubmit = async e => {
         e.preventDefault()
         try {
@@ -136,7 +130,7 @@ export default function CreateCarosel() {
                             carosel.map(carosel => (
                                 <div key={carosel.id} className="imageContainer">
 
-                                    <img className="image" src={carosel.images.url} width="200" />
+                                    <img className="image" src={carosel.images.url} alt=" "  />
                                     <button className="but" onClick={() => deleteCarosel(carosel)}>Delete</button>
                                    
                                 </div>

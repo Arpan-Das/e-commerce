@@ -23,7 +23,8 @@ code {
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
-  box-shadow: 0 0 35px #eee;
+  box-shadow: 0 0 35px #8b8787;
+  background-color: white;
 }
 a{
   text-decoration: none;

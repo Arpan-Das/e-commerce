@@ -67,8 +67,10 @@ button{
 /*------------- Create Product -------------------------*/
 @import url('./components/mainpages/createProduct/createProduct.css');
 
+/*------------- Create carosel -------------------------*/
+@import url('./components/mainpages/createcarosel/createCarosel2.css');
 
-
+@import url('./components/mainpages/utils/carosel/carosel.css');
 /*---------------- Responsive ------------------------*/
 @media (max-width: 820px){
   header .logo{

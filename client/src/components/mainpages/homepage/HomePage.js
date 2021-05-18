@@ -1,9 +1,11 @@
 import React from 'react'
-
+import Carosel from "../utils/carosel/carosel"
 function HomePage() {
     return (
         <div>
-           this is home page and currently working on it.
+             <div>
+                 <Carosel/>
+               </div>
         </div>
     )
 }

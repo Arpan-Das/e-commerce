@@ -5,7 +5,7 @@ import Loading from '../utils/loading/Loading';
 import axios from 'axios';
 import Filters from './Filters';
 import LoadMore from './LoadMore';
-
+// import Carosel from './carosel'
 function Products() {
     const state = useContext(GlobalState);
     const [products, setProducts] = state.productsAPI.products;
@@ -86,6 +86,7 @@ function Products() {
                     <button onClick={deleteAll}>Delete All</button>
                 </div>
             }
+            
             
             <div className="products">
                 {

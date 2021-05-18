@@ -18,8 +18,11 @@ app.use(fileUpload({
 app.use('/user', require('./routes/userRouter'))
 app.use('/api', require('./routes/categoryRoutes'))
 app.use('/api', require('./routes/upload'))
+app.use('/api', require('./routes/uploadCarosel'))
+
 app.use('/api', require('./routes/productRoutes'))
 app.use('/api', require('./routes/paymentRouter'))
+app.use('/api', require('./routes/caroselRoutes'))
 
 
 // app.get('/', (req,res) =>{

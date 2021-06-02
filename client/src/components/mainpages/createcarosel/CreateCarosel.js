@@ -51,7 +51,7 @@ export default function CreateCarosel() {
         try {
             if (!isAdmin) return alert("You are not an admin")
             setLoading(true)
-            await axios.post('/api//destroyCarosel', { public_id: images.public_id }, {
+            await axios.post('/api/destroyCarosel', { public_id: images.public_id }, {
                 headers: { Authorization: token }
             })
 

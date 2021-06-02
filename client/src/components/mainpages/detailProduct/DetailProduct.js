@@ -31,8 +31,19 @@ function DetailProduct() {
                 <div className="row">
                     <h2>{detailProduct.title}</h2>
                     <h6>#id: {detailProduct.product_id}</h6>
+                    
+                   
                 </div>
+                <div className="row">
                 <span>Rs. {detailProduct.price}</span>
+                {  
+                    detailProduct.stock &&
+                    <span> stock:{detailProduct.stock}</span>
+                }
+                    
+                   
+                </div>
+                
                 <p>{detailProduct.description}</p>
                 <p>{detailProduct.content}</p>
                 <p>Sold: {detailProduct.sold}</p>

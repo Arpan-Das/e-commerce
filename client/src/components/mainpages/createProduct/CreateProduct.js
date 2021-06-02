@@ -11,7 +11,8 @@ const intialStage = {
     description:'How to add tutorial videos of cool css effect, web design ideas, Javaxcript libraries, Node.',
     content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate maxime, enim provident facilis atque cum! Laudantium commodi expedita, deleniti perferendis corporis praesentium veritatis eligendi, aliquid fugit quidem iure possimus similique modi autem. Amet.',
     category: '',
-    _id: ''
+    _id: '',
+    stock:''
 }
 
 function CreateProduct() {
@@ -35,6 +36,7 @@ function CreateProduct() {
             setOnEdit(true)
             products.forEach(product =>{
                 if(product._id === param.id){ 
+                    
                     setProduct(product)
                     setImages(product.images)
                 }
@@ -141,7 +143,7 @@ function CreateProduct() {
                 <div className="row">
                     <label htmlFor="product_id">Product ID</label>
                     <input type="text" name="product_id" id="product_id" required
-                    value={product.product_id} onChange={handleChangeInput} disabled={onEdit} />
+                    value={product.product_id} onChange={handleChangeInput}  />
                 </div>
                 <div className="row">
                     <label htmlFor="title">Title</label>
@@ -152,6 +154,11 @@ function CreateProduct() {
                     <label htmlFor="price">Price</label>
                     <input type="number" name="price" id="price" required
                     value={product.price} onChange={handleChangeInput}/>
+                </div>
+                <div className="row">
+                    <label htmlFor="stock">Stock</label>
+                    <input type="number" name="stock" id="stock" required
+                    value={product.stock} onChange={handleChangeInput}/>
                 </div>
                 <div className="row">
                     <label htmlFor="description">Description</label>

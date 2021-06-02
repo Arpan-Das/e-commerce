@@ -38,7 +38,10 @@ const paymentCtrl = {
 
 const sold = async(id, quantity, oldSold) =>{
     await Products.findOneAndUpdate({_id: id}, {
-        sold: quantity + oldSold
+        sold: quantity + oldSold,
+        stock:stock-quantity
+        
+            
     })
 }
 

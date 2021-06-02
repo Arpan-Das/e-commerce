@@ -12,13 +12,14 @@ cloudinary.config({
 })
 
 // upload image only admin can use
-router.post('/uploadCarosel',auth,authAdmin,(req, res) =>{
+router.post('/uploadCarosel',(req, res) =>{
     try {
        // console.log(req.files)
         if(!req.files || Object.keys(req.files).length ===0 )
             return res.status(400).json({msg:'No files were Uploaded'})
     
         const file = req.files.file;
+        console.log(file)
         if(file.size > 3000*3000) {
             removeTmp(file.tempFilePath)
             return res.status(400).json({msg: "Size too large"})

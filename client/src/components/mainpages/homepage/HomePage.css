@@ -1,0 +1,10 @@
+.door{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.posters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

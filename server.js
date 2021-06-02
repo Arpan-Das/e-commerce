@@ -19,11 +19,12 @@ app.use('/user', require('./routes/userRouter'))
 app.use('/api', require('./routes/categoryRoutes'))
 app.use('/api', require('./routes/upload'))
 app.use('/api', require('./routes/uploadCarosel'))
+app.use('/api', require('./routes/uploadPoster'))
 
 app.use('/api', require('./routes/productRoutes'))
 app.use('/api', require('./routes/paymentRouter'))
 app.use('/api', require('./routes/caroselRoutes'))
-
+app.use('/api', require('./routes/posterRoutes'))
 
 // app.get('/', (req,res) =>{
 //     res.json({msg: "Welcome to my backend, Thanks"})

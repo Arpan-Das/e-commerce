@@ -14,7 +14,7 @@ import Categories from './categories/Categories';
 import CreateProduct from './createProduct/CreateProduct';
 import HomePage from './homepage/HomePage';
 import CreateCarosel from "./createcarosel/CreateCarosel"
-
+import Createposter from "./createPoster/CreatePoster"
 
 function Pages() {
     const state = useContext(GlobalState);
@@ -59,9 +59,16 @@ function Pages() {
             <Route exact path='/create_carosel' >
                {isAdmin ? <CreateCarosel /> : <NotFound/>} 
             </Route>
+            <Route exact path='/create_poster' >
+               {isAdmin ? <Createposter/> : <NotFound/>} 
+            </Route>
             <Route exact path='/edit_product/:id' >
                {isAdmin ? <CreateProduct /> : <NotFound/>} 
             </Route>
+            <Route exact path='/edit_poster/:id' >
+               {isAdmin ? <Createposter/> : <NotFound/>} 
+            </Route>
+            
             <Route path='*' >
                 <NotFound />
             </Route>

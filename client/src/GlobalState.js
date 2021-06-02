@@ -3,6 +3,7 @@ import ProductsAPI from './API/ProductsAPI';
 import UserAPI from './API/UserAPI';
 import CategoriesAPI from './API/CategoriesAPI';
 import CaroselAPI from './API/CaroselAPI'
+import PosterAPI from './API/PosterAPI'
 import axios from 'axios';
 
 
@@ -34,7 +35,8 @@ export const DataProvider = ({children}) =>{
         productsAPI: ProductsAPI(),
         userAPI: UserAPI(token),
         categoriesAPI: CategoriesAPI(),
-        caroselAPI:CaroselAPI()
+        caroselAPI:CaroselAPI(),
+        posterAPI:PosterAPI()
     }
 
     return(

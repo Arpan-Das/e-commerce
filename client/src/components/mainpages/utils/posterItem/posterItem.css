@@ -1,0 +1,37 @@
+.poster_card{
+    cursor: pointer;
+    max-width: 250px;
+    overflow: hidden;
+    height: 430px;
+    padding: 15px;
+    box-shadow: 0 0 15px #ddd;
+    margin: 2px 3px;
+    position: relative;
+    background-color: rgb(241, 238, 238);
+}
+.poster_card img{
+    width:100%;
+  
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    margin-bottom: auto;
+}
+.poster_box{
+    padding-bottom: 10px;
+}
+.poster_box h4{
+    width: 100%;
+    display: -webkit-box;
+    padding: auto;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    height: auto;
+    overflow: hidden;
+    color: #323232;
+}
+#btn_buy{
+    background: #555;
+    margin-right: 5px;
+}
+
